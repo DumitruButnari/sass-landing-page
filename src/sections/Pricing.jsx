@@ -61,7 +61,7 @@ const Pricing = () => {
           {/*Pricing section*/}
           <div
             className={
-              "scroll-hide relative z-2 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6"
+              "scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6"
             }
           >
             {plans.map((plan, index) => (
@@ -81,7 +81,7 @@ const Pricing = () => {
                 <div
                   className={clsx(
                     "absolute left-0 right-0 z-2 flex items-center justify-center",
-                    index === 1 ? "-top-6" : "-top-11",
+                    index === 1 ? "-top-6" : "-top-6 xl:-top-11",
                   )}
                 >
                   <img
