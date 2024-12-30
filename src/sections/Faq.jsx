@@ -44,6 +44,7 @@ const Faq = () => {
                   <FaqItem key={item.id} index={index} />
                 ))}
               </div>
+              <p>test</p>
             </div>
           </div>
         </div>
