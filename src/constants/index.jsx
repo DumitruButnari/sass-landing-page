@@ -244,6 +244,62 @@ export const logos = [
     width: 77,
     height: 48,
   },
+  {
+    id: "5",
+    title: "Afterpay",
+    url: "/images/logos/afterpay.svg",
+    width: 156,
+    height: 48,
+  },
+  {
+    id: "6",
+    title: "Amplitude",
+    url: "/images/logos/amplitude.svg",
+    width: 194,
+    height: 48,
+  },
+  {
+    id: "7",
+    title: "Sonos",
+    url: "/images/logos/sonos.svg",
+    width: 115,
+    height: 48,
+  },
+  {
+    id: "8",
+    title: "Maze",
+    url: "/images/logos/maze.svg",
+    width: 142,
+    height: 48,
+  },
+  {
+    id: "9",
+    title: "Drips",
+    url: "/images/logos/drips.svg",
+    width: 77,
+    height: 48,
+  },
+  {
+    id: "10",
+    title: "Afterpay",
+    url: "/images/logos/afterpay.svg",
+    width: 156,
+    height: 48,
+  },
+  {
+    id: "11",
+    title: "Amplitude",
+    url: "/images/logos/amplitude.svg",
+    width: 194,
+    height: 48,
+  },
+  {
+    id: "12",
+    title: "Sonos",
+    url: "/images/logos/sonos.svg",
+    width: 115,
+    height: 48,
+  },
 ];
 
 export const Ios = () => {
