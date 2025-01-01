@@ -313,3 +313,7 @@
 
   /*  END of Footer*/
 }
+
+.sticky {
+  @apply fixed top-20;
+}
