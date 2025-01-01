@@ -1,12 +1,17 @@
 import clsx from "clsx";
 import { useState } from "react";
+import PropTypes from "prop-types";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 
 const FaqItem = ({ item, index }) => {
   const [activeId, setActiveId] = useState(null);
-
   const active = activeId === item.id;
+
+  FaqItem.propTypes = {
+    item: PropTypes.object.isRequired,
+    index: PropTypes.number.isRequired,
+  };
 
   return (
     <div className="relative z-2 mb-16">
