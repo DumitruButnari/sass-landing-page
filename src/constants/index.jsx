@@ -460,26 +460,26 @@ export const links = [
 export const socials = [
   {
     id: "0",
-    title: "x",
-    icon: "/images/socials/x.svg",
-    url: "#",
+    title: "facebook",
+    icon: "/images/socials/Facebook_icon.svg",
+    url: "https://www.facebook.com/DumitruButnariDoxa/",
   },
   {
     id: "1",
-    title: "Threads",
-    icon: "/images/socials/threads.svg",
-    url: "#",
+    title: "linkedin",
+    icon: "/images/socials/linkedin.svg",
+    url: "https://www.linkedin.com/in/dumitrubutnari/",
   },
   {
     id: "2",
     title: "Instagram",
     icon: "/images/socials/instagram.svg",
-    url: "#",
+    url: "https://www.instagram.com/dimadoxadeo/",
   },
   {
     id: "3",
     title: "Discord",
-    icon: "/images/socials/discord.svg",
-    url: "#",
+    icon: "/images/socials/threads.svg",
+    url: "mailto:dmtrbutnari@yahoo.com",
   },
 ];
