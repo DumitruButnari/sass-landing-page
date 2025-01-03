@@ -256,7 +256,7 @@
   }
 
   .testimonials_inner-before {
-    @apply before:pointer-events-none before:absolute before:-top-28 before:left-[calc(50%-1px)] before:h-[calc(100%+218px)] before:w-0.5 before:bg-s2 before:content-[''] before:max-lg:top-0 before:max-lg:h-full before:max-md:hidden;
+    @apply before:pointer-events-none before:absolute before:-top-28 before:left-[calc(50%-1px)] before:h-[calc(100%+225px)] before:w-0.5 before:bg-s2 before:content-[''] before:max-lg:top-0 before:max-lg:h-full before:max-md:hidden;
   }
 
   .testimonials_inner-after {
@@ -312,4 +312,28 @@
   }
 
   /*  END of Footer*/
+}
+
+.sticky {
+  @apply fixed top-20;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container {
+  overflow: hidden;
+}
+
+.scroll-content {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  animation: scroll 20s linear infinite;
 }
