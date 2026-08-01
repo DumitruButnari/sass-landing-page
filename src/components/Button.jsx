@@ -66,5 +66,6 @@ Button.propTypes = {
   href: PropTypes.string,
   containerClassName: PropTypes.string,
   onClick: PropTypes.func,
+  markerFill: PropTypes.string,
 };
 export default Button;

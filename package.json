@@ -1,10 +1,10 @@
 {
   "name": "saas-landing-page",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "engines": {
-    "node": "24.x"
+    "node": "24.0"
   },
   "scripts": {
     "dev": "vite",
@@ -33,8 +33,8 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
     "postcss": "^8.5.1",
+    "prettier": "^3.5.3",
     "tailwindcss": "^3",
-    "vite": "^8.2.0",
-    "prettier": "^3.5.3"
+    "vite": "^8.2.0"
   }
 }

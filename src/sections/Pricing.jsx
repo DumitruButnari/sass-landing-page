@@ -8,6 +8,9 @@ import Button from "../components/Button.jsx";
 const Pricing = () => {
   const [monthly, setMonthly] = useState(false);
 
+  // Ensure CountUp works whether it's a module namespace or default export
+  const CountUpComponent = (CountUp && CountUp.default) ? CountUp.default : CountUp;
+
   return (
     <section>
       <Element name="pricing">
@@ -117,13 +120,13 @@ const Pricing = () => {
                       )}
                     >
                       $
-                      <CountUp
-                        start={plan.priceMonthly}
-                        end={monthly ? plan.priceMonthly : plan.priceYearly}
-                        duration={0.5}
-                        preserveValue
-                        useEasing={false}
-                      />
+                      <CountUpComponent
+                          start={plan.priceMonthly}
+                          end={monthly ? plan.priceMonthly : plan.priceYearly}
+                          duration={0.5}
+                          preserveValue
+                          useEasing={false}
+                        />
                     </div>
                     <div className={"small-1 relative top-3 ml-1 uppercase"}>
                       {monthly ? "/mo" : "/yr"}
@@ -142,7 +145,7 @@ const Pricing = () => {
                 <ul className={"mx-auto space-y-4 xl:px-7"}>
                   {plan.features.map((feature) => (
                     <li
-                      key={feature}
+                      key={`${plan.id}-${feature}-${index}`}
                       className={"flex items-center relative gap-5"}
                     >
                       <img
